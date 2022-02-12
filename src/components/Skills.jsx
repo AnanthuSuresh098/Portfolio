@@ -12,66 +12,129 @@ import { faCss3Alt, faDocker, faHtml5, faJs, faReact ,faNodeJs } from '@fortawes
 
 const Skills = ({darkMode}) => {
     return (
-        <div data-theme={darkMode ? "dark" : "light"}>
-            <br></br>
-            <Slide>
-            <Container>
-                <Row>
-                <Col lg={4} xs={8}>
-                    <h1 className="display-3 skill-h">I can work <p className="with">with</p> </h1>
-                    <img src={darkMode? skillsDark : skillsLight} alt="skills" className="skills-img img-fluid animated"/>
-                </Col>
-                <Col lg={2} xs={4}>
-                    <br></br>
-                    <Card className="nbcard" id="skill-sec">
-                    <Button variant={darkMode ? "outline-light" : "outline-dark"} className="skills-btn">
-                    <FontAwesomeIcon className="skill" size='2x' icon={faHtml5}/>
+      <div data-theme={darkMode ? "dark" : "light"}>
+        <br></br>
+        <Slide>
+          <Container>
+            <Row>
+              <Col lg={4} xs={8}>
+                <h1 className="display-3 skill-h">
+                  I can work <p className="with">with</p>{" "}
+                </h1>
+                <img
+                  src={darkMode ? skillsDark : skillsLight}
+                  alt="skills"
+                  className="skills-img img-fluid animated"
+                />
+              </Col>
+              <Col lg={2} xs={4}>
+                <br></br>
+                <Card className="nbcard" id="skill-sec">
+                  <div id="html-wrap">
+                    <Button
+                      variant={darkMode ? "outline-light" : "outline-dark"}
+                      className="skills-btn"
+                      id="html-btn"
+                    >
+                      <FontAwesomeIcon
+                        className="skill"
+                        size="2x"
+                        icon={faHtml5}
+                      />
                     </Button>
-                    <Button variant={darkMode ? "outline-light" : "outline-dark"} className="skills-btn">
-                    <FontAwesomeIcon className="skill" size='2x' icon={faCss3Alt}/>
+                    <div id="html-pop">HTML</div>
+                  </div>
+                  <div id="css-wrap">
+                    <Button
+                      variant={darkMode ? "outline-light" : "outline-dark"}
+                      className="skills-btn"
+                      id="css-btn"
+                    >
+                      <FontAwesomeIcon
+                        className="skill"
+                        size="2x"
+                        icon={faCss3Alt}
+                      />
                     </Button>
-                    <Button variant={darkMode ? "outline-light" : "outline-dark"} className="skills-btn">
-                    <FontAwesomeIcon className="skill" size='2x' icon={faJs}/>
+                    <div id="css-pop">CSS</div>
+                  </div>
+                  <div id="js-wrap">
+                    <Button
+                      variant={darkMode ? "outline-light" : "outline-dark"}
+                      className="skills-btn"
+                      id="js-btn"
+                    >
+                      <FontAwesomeIcon
+                        className="skill"
+                        size="2x"
+                        icon={faJs}
+                      />
                     </Button>
-                    <Button variant={darkMode ? "outline-light" : "outline-dark"} className="skills-btn">
-                    <FontAwesomeIcon className="skill" size='2x' icon={faReact}/>
+                    <div id="js-pop">JAVASCRIPT</div>
+                  </div>
+                  <div id="react-wrap">
+                    <Button
+                      variant={darkMode ? "outline-light" : "outline-dark"}
+                      className="skills-btn"
+                      id="react-btn"
+                    >
+                      <FontAwesomeIcon
+                        className="skill"
+                        size="2x"
+                        icon={faReact}
+                      />
                     </Button>
-                    <Button variant={darkMode ? "outline-light" : "outline-dark"} className="skills-btn">
-                    <FontAwesomeIcon className="skill" size='2x' icon={faNodeJs}/>
+                    <div id="react-pop">REACT</div>
+                  </div>
+                  <div id="node-wrap">
+                    <Button
+                      variant={darkMode ? "outline-light" : "outline-dark"}
+                      className="skills-btn"
+                      id="node-btn"
+                    >
+                      <FontAwesomeIcon
+                        className="skill"
+                        size="2x"
+                        icon={faNodeJs}
+                      />
                     </Button>
-                    {/* <Button variant={darkMode ? "outline-light" : "outline-dark"} className="skills-btn">
+                    <div id="node-pop">NODE</div>
+                  </div>
+                  {/* <Button variant={darkMode ? "outline-light" : "outline-dark"} className="skills-btn">
                     <p align="center" className="skill-txt">C</p>
                     </Button> */}
-                    </Card>
-                </Col>
-                <Col lg={6} xs={12}>
-                    <br></br>
-                    {/* <Card className="skill-nbcard">
+                </Card>
+              </Col>
+              <Col lg={6} xs={12}>
+                <br></br>
+                {/* <Card className="skill-nbcard">
                         <Card.Body>
                             <Card.Title>Programming Languages</Card.Title>
                             <Card.Text>C Programming, C++, GNU Octave, Python, JavaScript</Card.Text>
                         </Card.Body>
                     </Card> */}
-                    <Card className="skill-nbcard">
-                        <Card.Body >
-                            <Card.Title>Technologies</Card.Title>
-                            <Card.Text>HTML , CSS , JS , REACT , MONGODB , REDUX , NODE , EXPRESS</Card.Text>
-                        </Card.Body>
-                    </Card>
-                    {/* <Card className="skill-nbcard">
+                <Card className="skill-nbcard">
+                  <Card.Body>
+                    <Card.Title>Technologies</Card.Title>
+                    <Card.Text>
+                      HTML , CSS , JS , REACT , MONGODB , REDUX , NODE , EXPRESS
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                {/* <Card className="skill-nbcard">
                         <Card.Body >
                             <Card.Title>Others</Card.Title>
                             <Card.Text>MS office, Graphic Designing</Card.Text>
                         </Card.Body>
                     </Card> */}
-                </Col>
-                </Row>
-                <br></br>
-                <hr></hr>
-            </Container>
-            </Slide>
-        </div>
-    )
+              </Col>
+            </Row>
+            <br></br>
+            <hr></hr>
+          </Container>
+        </Slide>
+      </div>
+    );
 }
 
 export default Skills
