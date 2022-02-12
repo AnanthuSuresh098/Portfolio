@@ -1,6 +1,7 @@
 import React from "react";
-// import CallIcon from "@mui/icons-material/Call";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MdEmail } from "react-icons/md";
+import { BsTelephone, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 const Footer = () => {
   return (
     <div>
@@ -12,8 +13,24 @@ const Footer = () => {
           I'm looking forward for new opportunities in full-stack web
           development.
         </div>
-        <div>
-        {/* <div>{CallIcon}</div> */}
+        <div id="social-media">
+          <a href="">
+            <BsTelephone class="scl-type" />
+          </a>
+          <MdEmail class="scl-type" />
+          <a href="https://github.com/AnanthuSuresh098" target="blank">
+            <BsGithub class="scl-type" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ananthu-suresh-2a166921b/"
+            target="blank"
+          >
+            <BsLinkedin class="scl-type" />
+          </a>
+          <a href="https://twitter.com/Ananthusuresh55" target="blank">
+            {" "}
+            <BsTwitter class="scl-type" />
+          </a>
         </div>
       </div>
       <p className="footer-text">
