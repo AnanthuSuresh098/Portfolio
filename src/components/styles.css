@@ -287,3 +287,6 @@ strong,
     width:50px;
     color: lightslategrey;
 }
+.scl-type:hover{
+    transform: rotate(10deg);
+}
