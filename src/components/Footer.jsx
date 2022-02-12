@@ -9,7 +9,7 @@ const Footer = () => {
         <br></br>
         <small>All rights reserved © 2021 Tejaswi</small>
         <br></br>
-        <small>Illustrations by undraw.co</small>
+        <small>Illustrations by undraw</small>
       </p>
     </div>
   );
