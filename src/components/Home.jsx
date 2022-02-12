@@ -15,7 +15,7 @@ const Home = ({darkMode}) => {
                 <h1 className="display-3 hello" align="center">HELLO!<code> I'm Ananthu</code></h1>
                 <h2 className="lead" align="center">I
                     <span
-                        class="txt-rotate"
+                        className="txt-rotate"
                         data-period="2000"
                         data-rotate='[ " am a Full-Stack Developer"]'>
                     </span>
