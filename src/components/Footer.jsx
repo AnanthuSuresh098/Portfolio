@@ -14,10 +14,12 @@ const Footer = () => {
           development.
         </div>
         <div id="social-media">
-          <a href="">
+          <a href="tel:+919048569429">
             <BsTelephone class="scl-type" />
           </a>
+          <a href = "mailto: ananthusuresh098@gmail.com">
           <MdEmail class="scl-type" />
+          </a>
           <a href="https://github.com/AnanthuSuresh098" target="blank">
             <BsGithub class="scl-type" />
           </a>
