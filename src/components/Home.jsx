@@ -1,7 +1,7 @@
 import React from 'react'
 import { AttentionSeeker } from 'react-awesome-reveal';
-import helloLight from '../media/hello-light.png';
-import helloDark from '../media/home-anim2.svg';
+import helloLight from '../media/hello-light.svg';
+import helloDark from '../media/hello-dark.svg';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/esm/Row';
 import Container from 'react-bootstrap/esm/Container';

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Slide } from "react-awesome-reveal";
-import skillsLight from '../media/skills-light.svg';
+import skillsLight from '../media/version.svg';
 import skillsDark from '../media/skill-anim-dark.svg';
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
