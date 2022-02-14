@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Home, About, Skills, Experience, Contact, Footer } from './components'
 import { useState } from "react";
@@ -36,7 +36,7 @@ function App() {
                 </RiSunFill>
             </Navbar.Collapse>
           </Navbar>
-          <hr></hr>
+          <hr id="nav-hr"></hr>
           <div id="home">
           <Home darkMode={darkMode} />
           </div>
