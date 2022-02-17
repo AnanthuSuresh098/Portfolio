@@ -14,7 +14,7 @@ import { RiSunFill } from "react-icons/ri";
 
 function App() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const toggleDarkMode = () => setDarkMode(darkMode ? false : true);
 
   return (

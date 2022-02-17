@@ -22,7 +22,7 @@ const Experience = ({darkMode}) => {
           <Container>
             <br></br>
             <h2 className="lead" align="center">
-              <b>  Projects  </b>
+              <b> Projects </b>
             </h2>
             <br></br>
             <Zoom>
@@ -356,7 +356,11 @@ const Experience = ({darkMode}) => {
                     </center>
                     <br></br>
                     <div>
-                      <a href="#" target="_blank" rel="noreferrer noopener">
+                      <a
+                        href="https://bit.ly/strawberry-cw"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
                         <Button
                           variant={darkMode ? "outline-light" : "outline-dark"}
                           className="sbtn"
