@@ -2,6 +2,7 @@ import { useState, React } from 'react'
 import { Zoom, Fade } from 'react-awesome-reveal'
 import practo from '../media/practo.png'
 import straw from '../media/straw.png'
+import adidas from "../media/adidas.png";
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Row from 'react-bootstrap/esm/Row'
@@ -370,6 +371,78 @@ const Experience = ({darkMode}) => {
                       </a>
                       <a
                         href="https://github.com/codingwithgyan/Strawberry-net"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <Button
+                          variant={darkMode ? "outline-light" : "outline-dark"}
+                          className="sbtn"
+                        >
+                          Github Repo
+                        </Button>
+                      </a>
+                    </div>
+                    <br></br>
+                  </Card>
+                </Col>
+
+                <Col lg={4} sm={12}>
+                  <Card
+                    align="center"
+                    className="exp"
+                    data-theme={darkMode ? "dark" : "light"}
+                  >
+                    <br></br>
+                    <center>
+                      <div className="flip-card">
+                        <div className="flip-card-inner">
+                          <div className="flip-card-front">
+                            <Card.Img variant="top" src={adidas} />
+                            <Card.Body>
+                              <Card.Title align="center">
+                                Adidas Replica
+                              </Card.Title>
+                              <Card.Text>
+                                <p align="center">
+                                  Adidas e-commerce website for buying adidas
+                                  products online.
+                                </p>
+                              </Card.Text>
+                            </Card.Body>
+                          </div>
+                          <div className="flip-card-back">
+                            <h4>
+                              <strong>Tech stack</strong>
+                            </h4>{" "}
+                            HTML , CSS , JAVASCRIPT , MONGODB , EXPRESS , REACT
+                            <br></br>
+                            <br />
+                            <h4>
+                              <strong>Features</strong>
+                            </h4>{" "}
+                            User authentication , Backend integration , Mongodb
+                            atlas integrated , Wishlist feature , Cart feature ,
+                            products carousel , Payment gateway.
+                          </div>
+                        </div>
+                      </div>
+                    </center>
+                    <br></br>
+                    <div>
+                      <a
+                        href="https://adidas-clone-team44.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <Button
+                          variant={darkMode ? "outline-light" : "outline-dark"}
+                          className="sbtn"
+                        >
+                          View Website
+                        </Button>
+                      </a>
+                      <a
+                        href="https://github.com/AnanthuSuresh098/Adidas-replica"
                         target="_blank"
                         rel="noreferrer noopener"
                       >
