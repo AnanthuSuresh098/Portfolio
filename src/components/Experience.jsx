@@ -287,7 +287,7 @@ const Experience = ({darkMode}) => {
                     <br></br>
                     <div>
                       <a
-                        href="https://practoclone.netlify.app"
+                        href="https://practo-clone.netlify.app"
                         target="_blank"
                         rel="noreferrer noopener"
                       >
