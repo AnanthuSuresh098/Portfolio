@@ -24,7 +24,7 @@ const Contact = ({darkMode}) => {
 		e.preventDefault();
             emailjs
               .send(
-                "service_7lp74jr",
+                "service_nj9tbxq",
                 "template_aymgeyt",
                 templateParams,
                 "user_Penm5s1dqZYvUc31SLj7I"

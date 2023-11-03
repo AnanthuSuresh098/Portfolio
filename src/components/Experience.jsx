@@ -1,8 +1,10 @@
 import { useState, React } from 'react'
-import { Zoom, Fade } from 'react-awesome-reveal'
-import practo from '../media/practo.png'
-import straw from '../media/straw.png'
-import adidas from "../media/adidas.png";
+import { Zoom, Fade } from 'react-awesome-reveal';
+import dreamwell from '../media/dreamwell.png';
+import zinggalas from "../media/zinggalas.png";
+import jsk from "../media/jsk.png";
+import formula from "../media/formula.png";
+import vihari from "../media/vihari.png";
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Row from 'react-bootstrap/esm/Row'
@@ -28,222 +30,6 @@ const Experience = ({darkMode}) => {
             <br></br>
             <Zoom>
               <Row id="proj-wrap">
-                {/* <Col lg={4} sm={12}>
-                        <Card align="center" className="exp" data-theme={darkMode ? "dark" : "light"}>
-                        <br></br>
-                        <center>
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div className="flip-card-front">
-                                        <Card.Img variant="top" src={tcd}/>
-                                        <Card.Body>
-                                            <Card.Title align="center">Toxic Comment Detector</Card.Title>
-                                            <Card.Text>
-                                                <p align="center">A Chrome Extension which can detect whether the input text is Positive or Negative.</p>
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </div>
-                                    <div className="flip-card-back">
-                                        <p>Implemented Linear Regression Algorithm of Scikit-Learn library on well-preprocessed dataset of Kaggle.
-                                        <br></br>Hosted the Machine Learning Model on Heroku and Mia, integrated the hosted model in a Chrome Extension.
-                                        <br></br>Achieved ROC AUC Score of 93.5%
-                                        </p>
-                                    </div> 
-                                </div>
-                            </div>
-                        </center>
-                        <br></br>
-                        <div>
-                            <a href="https://miamarketplace.com/apps/LG7MrdG4a9anFy3ZxQ4hiHeGZEQtsAlpkt0JBGz3fvJs" target="_blank" rel="noreferrer noopener">
-                            <Button variant={darkMode ? "outline-light" : "outline-dark"} className="sbtn">View Project</Button>
-                            </a>
-                            <a href="https://github.com/Tejaswi-Chaudhari/Toxic-Comment-Classification" target="_blank" rel="noreferrer noopener">
-                            <Button variant={darkMode ? "outline-light" : "outline-dark"} className="sbtn">View Github Repo</Button>
-                            </a>
-                        </div>
-                        <br></br>
-                        </Card>
-                    </Col> */}
-                {/* <Col lg={4} sm={12}>
-                        <Card align="center" className="exp" data-theme={darkMode ? "dark" : "light"}>
-                        <br></br>
-                        <center>
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div className="flip-card-front">
-                                        <Card.Img variant="top" src={gotg}/>
-                                        <Card.Body>
-                                            <Card.Title align="center">InternExperience</Card.Title>
-                                            <Card.Text>
-                                                <p align="center">During this internship, I am building a web app to help people with their public speaking ability</p>
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </div>
-                                    <div className="flip-card-back">
-                                        <p>Planned the UI for website and designed frontend using ReactJs and React-Bootstrap
-                                        <br></br>Built Database models using Django Rest Framework and SQLite
-                                        <br></br>Created APIs to integrate frontend and backend together
-                                        <br></br>Dockerized the Web Application
-                                        </p>
-                                    </div> 
-                                </div>
-                            </div>
-                        </center>
-                        <br></br>
-                        <div>   
-                            <Modal show={show} onHide={handleClose} className="modal">
-                                <Modal.Body>Heya! The project is in development mode, you can visit the repository and have a look. Feel free to contribute!</Modal.Body>
-                                <Modal.Footer>
-                                <Button variant="outline-dark" onClick={handleClose}>
-                                    Close
-                                </Button>
-                                <a href="https://github.com/Tejaswi-Chaudhari/Gift-of-the-Gab" target="_blank" rel="noreferrer noopener">
-                                    <Button variant="outline-dark">View Github Repo</Button>
-                                </a>
-                                </Modal.Footer>
-                            </Modal>
-                            <Button variant={darkMode ? "outline-light" : "outline-dark"} onClick={handleShow} className="sbtn">View Project</Button>
-                            <a href="https://github.com/Tejaswi-Chaudhari/Gift-of-the-Gab" target="_blank" rel="noreferrer noopener">
-                                <Button variant={darkMode ? "outline-light" : "outline-dark"} className="sbtn">View Github Repo</Button>
-                            </a>
-                        </div>
-                        <br></br>
-                        </Card>
-                    </Col>*/}
-                {/* <Col lg={4} sm={12}>
-                  <Card
-                    align="center"
-                    className="exp"
-                    data-theme={darkMode ? "dark" : "light"}
-                  >
-                    <br></br>
-                    <center>
-                      <div class="flip-card">
-                        <div class="flip-card-inner">
-                          <div className="flip-card-front">
-                            <Card.Img variant="top" src={ca} />
-                            <Card.Body>
-                              <Card.Title align="center">CharitAble</Card.Title>
-                              <Card.Text>
-                                <p align="center">
-                                  A Fundraising Web App where people can start a
-                                  fundraiser for free
-                                </p>
-                              </Card.Text>
-                            </Card.Body>
-                          </div>
-                          <div className="flip-card-back">
-                            <p>
-                              Developed a Fundraising Web App where people can
-                              start a fundraiser for free and also contribute to
-                              other ongoing fundraisers.
-                              <br></br>This website can connect you to different
-                              Blood Banks as a Donor and Patient.
-                              <br></br>Tech Stack - ReachJs, Bootstrap, Cloud
-                              Firestore
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </center>
-                    <br></br>
-                    <div>
-                      <a
-                        href="https://charit-able.netlify.app/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <Button
-                          variant={darkMode ? "outline-light" : "outline-dark"}
-                          className="sbtn"
-                        >
-                          View Project
-                        </Button>
-                      </a>
-                      <a
-                        href="https://github.com/Tejaswi-Chaudhari/CharitAble"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <Button
-                          variant={darkMode ? "outline-light" : "outline-dark"}
-                          className="sbtn"
-                        >
-                          View Github Repo
-                        </Button>
-                      </a>
-                    </div>
-                    <br></br>
-                  </Card>
-                </Col>
-              </Row>
-            </Zoom>
-            <br></br>
-            <Zoom>
-              <Row>
-                <Col lg={4} sm={12}>
-                  <Card
-                    align="center"
-                    className="exp"
-                    data-theme={darkMode ? "dark" : "light"}
-                  >
-                    <br></br>
-                    <center>
-                      <div class="flip-card">
-                        <div class="flip-card-inner">
-                          <div className="flip-card-front">
-                            <Card.Img variant="top" src={rfp} />
-                            <Card.Body>
-                              <Card.Title align="center">
-                                Rooted - Portal for farmers
-                              </Card.Title>
-                              <Card.Text>
-                                <p align="center">
-                                  Developed a Portal for Farmers to sell their
-                                  goods at a better rate.
-                                </p>
-                              </Card.Text>
-                            </Card.Body>
-                          </div>
-                          <div className="flip-card-back">
-                            <p>
-                              User-friendly and clean basic scripted website
-                              <br></br>Tech Stack - HTML, CSS, JavaScript
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </center>
-                    <br></br>
-                    <div>
-                      <a
-                        href="https://rooted-portal.netlify.app/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <Button
-                          variant={darkMode ? "outline-light" : "outline-dark"}
-                          className="sbtn"
-                        >
-                          View Project
-                        </Button>
-                      </a>
-                      <a
-                        href="https://github.com/SheHacks-Hack-O-holics/SheHacks"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <Button
-                          variant={darkMode ? "outline-light" : "outline-dark"}
-                          className="sbtn"
-                        >
-                          View Github Repo
-                        </Button>
-                      </a>
-                    </div>
-                    <br></br>
-                  </Card>
-                </Col> */}
                 <Col lg={4} sm={12}>
                   <Card
                     align="center"
@@ -255,16 +41,14 @@ const Experience = ({darkMode}) => {
                       <div className="flip-card">
                         <div className="flip-card-inner">
                           <div className="flip-card-front">
-                            <Card.Img variant="top" src={practo} />
+                            <Card.Img variant="top" src={dreamwell} />
                             <Card.Body>
-                              <Card.Title align="center">
-                                Practo Replica
-                              </Card.Title>
+                              <Card.Title align="center">Dreamwell</Card.Title>
                               <Card.Text>
                                 <p align="center">
-                                  A replica of Practo website in which users can
-                                  book appointments , consultations with
-                                  doctors.
+                                  Dreamwell is a lead generation website from
+                                  which user can browse through different
+                                  mattress and pillow products and customise it.
                                 </p>
                               </Card.Text>
                             </Card.Body>
@@ -273,84 +57,16 @@ const Experience = ({darkMode}) => {
                             <h4>
                               <strong>Tech stack</strong>
                             </h4>{" "}
-                            HTML , CSS , JAVASCRIPT .<br></br>
-                            <br />
-                            <h4>
-                              <strong>Features</strong>
-                            </h4>{" "}
-                            User authentication , Responsive home page , Cart
-                            feature , products carousel , Payment gateway.
-                          </div>
-                        </div>
-                      </div>
-                    </center>
-                    <br></br>
-                    <div>
-                      <a
-                        href="https://practoclone-001.netlify.app/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <Button
-                          variant={darkMode ? "outline-light" : "outline-dark"}
-                          className="sbtn"
-                        >
-                          View Website
-                        </Button>
-                      </a>
-                      <a
-                        href="https://github.com/Vaman93/Practo-Clone"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <Button
-                          variant={darkMode ? "outline-light" : "outline-dark"}
-                          className="sbtn"
-                        >
-                          Github Repo
-                        </Button>
-                      </a>
-                    </div>
-                    <br></br>
-                  </Card>
-                </Col>
-                <Col lg={4} sm={12}>
-                  <Card
-                    align="center"
-                    className="exp"
-                    data-theme={darkMode ? "dark" : "light"}
-                  >
-                    <br></br>
-                    <center>
-                      <div className="flip-card">
-                        <div className="flip-card-inner">
-                          <div className="flip-card-front">
-                            <Card.Img variant="top" src={straw} />
-                            <Card.Body>
-                              <Card.Title align="center">
-                                Strawberrynet Replica
-                              </Card.Title>
-                              <Card.Text>
-                                <p align="center">
-                                  Strawberrynet is an e-commerce website from
-                                  which user can purchase beauty products.
-                                </p>
-                              </Card.Text>
-                            </Card.Body>
-                          </div>
-                          <div className="flip-card-back">
-                            <h4>
-                              <strong>Tech stack</strong>
-                            </h4>{" "}
-                            HTML , CSS , JAVASCRIPT , MONGODB , EXPRESS.
+                            REACTJS | HTML | CSS | NODEJS | BOOTSTRAP | MONGODB
                             <br></br>
                             <br />
                             <h4>
                               <strong>Features</strong>
                             </h4>{" "}
-                            User authentication , Backend integration , Mongodb
-                            atlas integrated , Cart feature , products carousel
-                            , Payment gateway.
+                            Customisation of products according to user needs,
+                            Lead Generation through form , Responsive UI for
+                            different screen sizes , Product Carousels and
+                            Components ,
                           </div>
                         </div>
                       </div>
@@ -358,7 +74,7 @@ const Experience = ({darkMode}) => {
                     <br></br>
                     <div>
                       <a
-                        href="https://bit.ly/strawberry-cw"
+                        href="https://Dreamwell.in"
                         target="_blank"
                         rel="noreferrer noopener"
                       >
@@ -369,8 +85,56 @@ const Experience = ({darkMode}) => {
                           View Website
                         </Button>
                       </a>
+                    </div>
+                    <br></br>
+                  </Card>
+                </Col>
+                <Col lg={4} sm={12}>
+                  <Card
+                    align="center"
+                    className="exp"
+                    data-theme={darkMode ? "dark" : "light"}
+                  >
+                    <br></br>
+                    <center>
+                      <div className="flip-card">
+                        <div className="flip-card-inner">
+                          <div className="flip-card-front">
+                            <Card.Img variant="top" src={zinggalas} />
+                            <Card.Body>
+                              <Card.Title align="center">Zinggalas</Card.Title>
+                              <Card.Text>
+                                <p align="center">
+                                  Zinggalas is an e-commerce website from which
+                                  user can book events and wishlist , add to
+                                  cart and purchase party products.
+                                </p>
+                              </Card.Text>
+                            </Card.Body>
+                          </div>
+                          <div className="flip-card-back">
+                            <h4>
+                              <strong>Tech stack</strong>
+                            </h4>{" "}
+                            HTML | CSS | REACTJS | MONGODB ATLAS | NODEJS |
+                            FIREBASE | MATERIAL UI
+                            <br></br>
+                            <br />
+                            <h4>
+                              <strong>Features</strong>
+                            </h4>{" "}
+                            Google Firebase authentication , Backend integration
+                            , Mongodb atlas integrated , Cart feature ,
+                            Wishlisting , User friendly UI for responsive
+                            screens
+                          </div>
+                        </div>
+                      </div>
+                    </center>
+                    <br></br>
+                    <div>
                       <a
-                        href="https://github.com/codingwithgyan/Strawberry-net"
+                        href="https://zinggalas.netlify.app/"
                         target="_blank"
                         rel="noreferrer noopener"
                       >
@@ -378,7 +142,7 @@ const Experience = ({darkMode}) => {
                           variant={darkMode ? "outline-light" : "outline-dark"}
                           className="sbtn"
                         >
-                          Github Repo
+                          View Website
                         </Button>
                       </a>
                     </div>
@@ -397,15 +161,14 @@ const Experience = ({darkMode}) => {
                       <div className="flip-card">
                         <div className="flip-card-inner">
                           <div className="flip-card-front">
-                            <Card.Img variant="top" src={adidas} />
+                            <Card.Img variant="top" src={vihari} />
                             <Card.Body>
-                              <Card.Title align="center">
-                                Adidas Replica
-                              </Card.Title>
+                              <Card.Title align="center">Vihari</Card.Title>
                               <Card.Text>
                                 <p align="center">
-                                  Adidas e-commerce website for buying adidas
-                                  products online.
+                                  Vihari is a real-estate lead generation
+                                  website where user can browse through some
+                                  real estate projects and the info about them
                                 </p>
                               </Card.Text>
                             </Card.Body>
@@ -414,15 +177,16 @@ const Experience = ({darkMode}) => {
                             <h4>
                               <strong>Tech stack</strong>
                             </h4>{" "}
-                            HTML , CSS , JAVASCRIPT , MONGODB , EXPRESS , REACT
+                            REACTJS | HTML | CSS | NODEJS | BOOTSTRAP | MONGODB
                             <br></br>
                             <br />
                             <h4>
                               <strong>Features</strong>
                             </h4>{" "}
-                            User authentication , Backend integration , Mongodb
-                            atlas integrated , Wishlist feature , Cart feature ,
-                            products carousel , Payment gateway.
+                            Lead Generation through form , Responsive UI for
+                            different screen sizes , Product Carousels and
+                            Components ,User friendly UI for better user
+                            experience
                           </div>
                         </div>
                       </div>
@@ -430,7 +194,7 @@ const Experience = ({darkMode}) => {
                     <br></br>
                     <div>
                       <a
-                        href="https://adidas-clone-team44.netlify.app/"
+                        href="https://vihariprojects.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                       >
@@ -441,8 +205,56 @@ const Experience = ({darkMode}) => {
                           View Website
                         </Button>
                       </a>
+                    </div>
+                    <br></br>
+                  </Card>
+                </Col>
+
+                <Col lg={4} sm={12}>
+                  <Card
+                    align="center"
+                    className="exp"
+                    data-theme={darkMode ? "dark" : "light"}
+                  >
+                    <br></br>
+                    <center>
+                      <div className="flip-card">
+                        <div className="flip-card-inner">
+                          <div className="flip-card-front">
+                            <Card.Img variant="top" src={jsk} />
+                            <Card.Body>
+                              <Card.Title align="center">JSK</Card.Title>
+                              <Card.Text>
+                                <p align="center">
+                                  Jsk is a lead generation website from which
+                                  user can browse through different packaging
+                                  products and request for samples and quote.
+                                </p>
+                              </Card.Text>
+                            </Card.Body>
+                          </div>
+                          <div className="flip-card-back">
+                            <h4>
+                              <strong>Tech stack</strong>
+                            </h4>{" "}
+                            REACTJS | HTML | CSS | NODEJS | BOOTSTRAP | MONGODB
+                            <br></br>
+                            <br />
+                            <h4>
+                              <strong>Features</strong>
+                            </h4>{" "}
+                            Lead Generation through form , Responsive UI for
+                            different screen sizes , Product Carousels and
+                            Components , User friendly ui for better user
+                            experience.
+                          </div>
+                        </div>
+                      </div>
+                    </center>
+                    <br></br>
+                    <div>
                       <a
-                        href="https://github.com/AnanthuSuresh098/Adidas-replica"
+                        href="https://jsk00.netlify.app/"
                         target="_blank"
                         rel="noreferrer noopener"
                       >
@@ -450,7 +262,69 @@ const Experience = ({darkMode}) => {
                           variant={darkMode ? "outline-light" : "outline-dark"}
                           className="sbtn"
                         >
-                          Github Repo
+                          View Website
+                        </Button>
+                      </a>
+                    </div>
+                    <br></br>
+                  </Card>
+                </Col>
+
+                <Col lg={4} sm={12}>
+                  <Card
+                    align="center"
+                    className="exp"
+                    data-theme={darkMode ? "dark" : "light"}
+                  >
+                    <br></br>
+                    <center>
+                      <div className="flip-card">
+                        <div className="flip-card-inner">
+                          <div className="flip-card-front">
+                            <Card.Img variant="top" src={formula} />
+                            <Card.Body>
+                              <Card.Title align="center">
+                                Formula Hub
+                              </Card.Title>
+                              <Card.Text>
+                                <p align="center">
+                                  Formula hub is an edutech website where user
+                                  can browse through different universities and
+                                  courses.
+                                </p>
+                              </Card.Text>
+                            </Card.Body>
+                          </div>
+                          <div className="flip-card-back">
+                            <h4>
+                              <strong>Tech stack</strong>
+                            </h4>{" "}
+                            REACTJS | HTML | CSS | NODEJS | BOOTSTRAP | MONGODB
+                            <br></br>
+                            <br />
+                            <h4>
+                              <strong>Features</strong>
+                            </h4>{" "}
+                            Lead Generation through form , Responsive UI for
+                            different screen sizes , Product Carousels and
+                            Components ,User friendly UI for better user
+                            experience
+                          </div>
+                        </div>
+                      </div>
+                    </center>
+                    <br></br>
+                    <div>
+                      <a
+                        href="https://formula-hub.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <Button
+                          variant={darkMode ? "outline-light" : "outline-dark"}
+                          className="sbtn"
+                        >
+                          View Website
                         </Button>
                       </a>
                     </div>
