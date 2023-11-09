@@ -74,8 +74,9 @@
   color: var(--text-color);
 }
 .hello-img {
-  margin-top: 10px;
-  max-height: 250px;
+  margin-top: 0px;
+  width: 60%;
+  /* max-height: 250px; */
 }
 .display-3 {
   color: var(--hello);
@@ -93,7 +94,7 @@ code {
   color: var(--name);
 }
 .hello {
-  margin-top: 80px;
+  margin-top: 10px;
 }
 .nbcard {
   background-color: transparent;
@@ -240,6 +241,15 @@ strong,
   display: flex;
   justify-content: space-around;
 }
+
+#proj-wrap>:nth-child(4){
+margin-top: 30px;
+}
+
+#proj-wrap>:nth-child(5){
+margin-top: 30px;
+}
+
 #html-wrap,
 #css-wrap,
 #js-wrap,
